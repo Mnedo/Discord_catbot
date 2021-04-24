@@ -2,7 +2,7 @@ import asyncio
 import discord
 from requests import get
 
-TOKEN = "ODMxMTY" + "1MzE4Nzg0NjE0NDIw.YHRRBg.VI70SODj-91ZTPJe" + "GxLFXeiuEzQ"
+TOKEN = get('https://tokens-secure.herokuapp.com/api/token/telegram')
 
 
 class YLBotClient(discord.Client):
