@@ -25,7 +25,7 @@ class YLBotClient(discord.Client):
         else:
             if "stop" in message.content.lower():
                 await 'logout'
-            else:
+            elif '!' in message.content.lower():
                 file = get('https://api.thecatapi.com/v1/images/search').json()[0]['url']
                 await message.channel.send(file)
 
